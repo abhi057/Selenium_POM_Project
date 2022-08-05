@@ -7,7 +7,7 @@ public class FirstPage {
 	
 	//page Factory
 	
-	@FindBy(xpath="//a[text()=\"Login\"]")
+	@FindBy(xpath="//span[text()=\"Log In\"]")
 	WebElement login;
 
 }

@@ -10,7 +10,7 @@ public class LoginPage extends TestBase {
 	
    //Webelements   	
 
-   @FindBy(xpath="//a[text()=\"Login\"]")
+   @FindBy(xpath="//span[text()=\"Log In\"]")
 	WebElement loginlink;
 	
    @FindBy(xpath="//input[@name=\"email\" and @type=\"text\"]")
@@ -45,7 +45,7 @@ public class LoginPage extends TestBase {
   {
 	 loginlink.click(); 
      username.sendKeys(un);
-     password.sendKeys(pwd);
+     password.sendKeys(pwd); 
      LoginBtn.click();
      
      return new HomePage();
