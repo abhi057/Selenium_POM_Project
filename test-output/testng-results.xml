@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-05T06:59:41Z" name="Default suite" finished-at="2022-08-05T07:00:05Z" duration-ms="23313">
+  <suite started-at="2022-08-06T11:39:50Z" name="Default suite" finished-at="2022-08-06T11:40:08Z" duration-ms="17838">
     <groups>
     </groups>
-    <test started-at="2022-08-05T06:59:41Z" name="Default test" finished-at="2022-08-05T07:00:05Z" duration-ms="23313">
-      <class name="com.crm.qa.test.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:29:41Z" name="setUp" finished-at="2022-08-05T12:29:52Z" duration-ms="10381" status="PASS">
+    <test started-at="2022-08-06T11:39:50Z" name="Default test" finished-at="2022-08-06T11:40:08Z" duration-ms="17838">
+      <class name="com.crm.qa.test.ContactsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.test.ContactsPageTest@662706a7]" started-at="2022-08-06T17:09:50Z" name="setUp" finished-at="2022-08-06T17:10:07Z" duration-ms="16549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:29:52Z" name="verifyHomePageTitle" finished-at="2022-08-05T12:29:52Z" duration-ms="307" status="PASS">
+        <test-method signature="selectContactsCheckbox()[pri:2, instance:com.crm.qa.test.ContactsPageTest@662706a7]" started-at="2022-08-06T17:10:07Z" name="selectContactsCheckbox" finished-at="2022-08-06T17:10:08Z" duration-ms="960" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:29:52Z" name="tearDown" finished-at="2022-08-05T12:29:52Z" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:29:52Z" name="setUp" finished-at="2022-08-05T12:30:03Z" duration-ms="10817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUsername()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:30:03Z" name="verifyUsername" finished-at="2022-08-05T12:30:04Z" duration-ms="1271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.test.HomePageTest@45a4b042]" started-at="2022-08-05T12:30:04Z" name="tearDown" finished-at="2022-08-05T12:30:05Z" duration-ms="250" status="PASS">
+        </test-method> <!-- selectContactsCheckbox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.test.ContactsPageTest@662706a7]" started-at="2022-08-06T17:10:08Z" name="tearDown" finished-at="2022-08-06T17:10:08Z" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.test.HomePageTest -->
+      </class> <!-- com.crm.qa.test.ContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

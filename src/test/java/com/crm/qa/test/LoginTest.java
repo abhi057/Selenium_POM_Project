@@ -26,7 +26,8 @@ public class LoginTest extends TestBase {
 	
 	@Test(priority=1)
 	public void firstPageTitleTest() {
-		String expectedTitle = "Free CRM software for customer relationship management, sales, marketing campaigns and support.";
+		//String expectedTitle = "Free CRM software for customer relationship management, sales, marketing campaigns and support.";
+		String expectedTitle = "#1 Free CRM customer relationship management software cloud";
 		String actualTitle = loginPage.getFirstpageTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		

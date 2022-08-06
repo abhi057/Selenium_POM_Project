@@ -10,46 +10,39 @@ import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
-public class HomePageTest extends TestBase{
+public class ContactsPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	HomePage homePage;  
 	ContactsPage contactsPage;
-
-	public HomePageTest()        
-	{
-		super();
+	
+	public ContactsPageTest(){
+		super(); 
 	}
 	
 	@BeforeMethod
-	public void setUp()
+	public void setUp() throws InterruptedException
 	{
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password")); 
 		contactsPage = new ContactsPage();
-	} 
-	
-	@Test(priority=1)
-	public void verifyHomePageTitle()
-	{
-		String actualTitle =  homePage.getHomePageTitle();
-		String expectedTitle = "Cogmento CRM";
-		Assert.assertEquals(actualTitle, expectedTitle);
-	}
-	
-	@Test(priority=2)
-	public void verifyUsername()
-	{
-		Assert.assertTrue(homePage.verifyUsername());
-	}
-	
-	
-	@Test(priority=3)
-	public void verifyContactLinkTest()
-	{
 		contactsPage = homePage.clickOnContactsBtn();
-	}
+		
+	}  
+	
+	
+    @Test(priority=1)
+    public void verifyContactsPagelabel() {
+    	Assert.assertTrue(contactsPage.verifyContactsPageLabel());
+    }
+    
+    @Test(priority=2)
+    public void selectContactsCheckbox() {
+    	Assert.assertTrue(contactsPage.selectContacts("Vid M"));    
+          
+    }
+    
 	
 	@AfterMethod
 	public void tearDown()
@@ -60,4 +53,5 @@ public class HomePageTest extends TestBase{
 	
 	
 	
+
 }
