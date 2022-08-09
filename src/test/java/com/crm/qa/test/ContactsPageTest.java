@@ -35,17 +35,17 @@ public class ContactsPageTest extends TestBase{
 	}  
 	
 	
-//    @Test(priority=1)
-//    public void verifyContactsPagelabel() {
-//    	Assert.assertTrue(contactsPage.verifyContactsPageLabel());
-//    }
+    @Test(priority=1)
+    public void verifyContactsPagelabel() {
+    	Assert.assertTrue(contactsPage.verifyContactsPageLabel());
+    }
     
-//    @Test(priority=2)
-//    public void selectContactsCheckbox() {
-//    	Assert.assertTrue(contactsPage.selectContacts("Abhi a")); 
-//    	Assert.assertTrue(contactsPage.selectContacts("Vid M"));    
-//          
-//    }
+    @Test(priority=2)
+    public void selectContactsCheckbox() {
+    	Assert.assertTrue(contactsPage.selectContacts("Abhi a")); 
+    	Assert.assertTrue(contactsPage.selectContacts("Vid M"));    
+          
+    }
     
     @DataProvider
     public Object[][] getCRMTestData() {
